@@ -5,7 +5,7 @@ import Nav from "./Nav";
 
 function Layout(props) {
   return (
-    <Container maxW={"80%"}>
+    <Container maxW={["100%", "100%", "80%"]}>
       <Nav />
       <Box py={"50px"} width={"full"}>
         {props.children}

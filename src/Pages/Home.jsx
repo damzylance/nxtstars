@@ -9,13 +9,14 @@ function Home() {
       <VStack align={"flex-start"} gap="50px" width={"full"}>
         <HStack
           width={"full"}
+          flexDir={["column-reverse", "column-reverse", "row", "row"]}
           gap="40px"
           borderRadius={"54px"}
           padding="10"
           background={"#E9F4D7"}
         >
           <VStack flex={1} gap="20px" alignItems="flex-start">
-            <Text fontWeight={"bold"} fontSize={"3xl"}>
+            <Text fontWeight={"bold"} fontSize={["2xl", "2xl", "2xl", "3xl"]}>
               <span style={{ color: "#80AE31", fontWeight: "900" }}>
                 Nxtstars
               </span>{" "}
@@ -49,7 +50,12 @@ function Home() {
           <Text fontWeight={700} fontSize="2xl">
             What We Do
           </Text>
-          <HStack width={"full"} overflowX="scroll" gap={5}>
+          <HStack
+            width={"full"}
+            overflowX="scroll"
+            flexDir={["column", "column", "row", "row"]}
+            gap={5}
+          >
             <Infocard image="/assets/images/heroimage1.png" />
             <Infocard
               image="/assets/images/heroimage1.png"

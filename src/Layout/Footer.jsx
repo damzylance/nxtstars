@@ -37,7 +37,12 @@ function Footer() {
         px={"4"}
         py="6"
       >
-        <HStack gap={"20px"} fontWeight="500">
+        <HStack
+          flexDir={["column", "column", "row"]}
+          alignItems={["flex-start"]}
+          gap={"20px"}
+          fontWeight="500"
+        >
           <Text fontWeight={"600"}>Terms of Use</Text>
           <Text fontWeight={"600"}>Privacy Policy</Text>
           <Text fontWeight={"600"}>Nxtstars Tech, inc.</Text>

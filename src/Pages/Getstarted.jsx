@@ -8,7 +8,7 @@ function Getstarted() {
     <Layout>
       <VStack
         height={"619px"}
-        width="70%"
+        width={["100%", "100%", "70%"]}
         margin={"0 auto"}
         justifyContent={"center"}
         background={"#E9F4D7"}

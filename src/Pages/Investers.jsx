@@ -10,6 +10,7 @@ function Investors() {
         <HStack
           width={"full"}
           alignItems={"center"}
+          flexDir={["column-reverse", "column-reverse", "row", "row"]}
           gap="40px"
           padding={10}
           borderRadius={"54px"}
@@ -37,7 +38,13 @@ function Investors() {
           />
         </HStack>
         <VStack width={"full"} gap={"10px"}>
-          <HStack width={"full"} overflowX="scroll" gap={5} align>
+          <HStack
+            width={"full"}
+            overflowX="scroll"
+            flexDir={["column", "column", "row", "row"]}
+            gap={5}
+            align
+          >
             <Infocard
               buttonText="The Struggle"
               title={

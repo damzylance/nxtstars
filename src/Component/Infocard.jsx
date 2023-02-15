@@ -1,5 +1,5 @@
 import React from "react";
-import { VStack, Box, Image, Button, Text } from "@chakra-ui/react";
+import { VStack, HStack, Image, Button, Text } from "@chakra-ui/react";
 
 function Infocard(props) {
   return (
@@ -7,22 +7,25 @@ function Infocard(props) {
       alignItems={"flex-start"}
       background={"#E9F4D7"}
       gap={"5px"}
-      minW="463px"
+      minW={["300px", "300px", "463px"]}
       padding={"18px 20px"}
       borderRadius={4}
       justifyContent="space-between"
+      marginInlineStart={"0rem !important"}
     >
-      <Box
-        background={"#fff"}
+      <HStack
         borderRadius="4"
         width={"full"}
-        textAlign="center"
+        flexDir={["column", "column", "row", "row"]}
+        justifyContent="space-between"
+        alignItems={"flex-start"}
       >
-        <Image width={"203px"} src={props.image} margin="0 auto" />
-      </Box>
-      <Button background={"#80AE31"} color="#fff">
-        {props.buttonText ? props.buttonText : "Players"}{" "}
-      </Button>
+        <Image width={"203px"} src={props.image} />
+        <Button background={"#80AE31"} color="#fff">
+          {props.buttonText ? props.buttonText : "Players"}
+        </Button>
+      </HStack>
+
       <Text fontSize={"large"} fontWeight={"600"}>
         {props.title ? props.title : "Never compromise on your potential"}
       </Text>
