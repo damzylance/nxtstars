@@ -2,31 +2,38 @@ import React, { Fragment } from "react";
 import Layout from "../Layout";
 import Infocard from "../Component/Infocard";
 import { VStack, Text, HStack, Image, Button } from "@chakra-ui/react";
-const span = { color: "#3290C4", fontWeight: "900" };
+const span = { color: "#80AE31", fontWeight: "900" };
 function Investors() {
   return (
     <Layout>
       <VStack align={"flex-start"} gap="50px" width={"full"}>
-        <HStack width={"full"} alignItems={"center"} gap="40px">
+        <HStack
+          width={"full"}
+          alignItems={"center"}
+          gap="40px"
+          padding={10}
+          borderRadius={"54px"}
+          background={"#E9F4D7"}
+        >
           <VStack flex={1} gap="20px" alignItems="flex-start">
             <Text fontWeight={"bold"} fontSize={"3xl"}>
               For the first time, <span style={span}>fund</span> football stars
               of tomorrow. Be part of the <span style={span}>journey</span>.
             </Text>
-            <Text>
+            <Text fontSize={"lg"}>
               Support aspiring football players to reach professional heights,
               and receive not just a portion of their earnings, but
               unprecedented access to the sport.
             </Text>
-            <Button color={"#fff"} background="#3290C4">
+            <Button color={"#fff"} background="#80AE31">
               Back Football Talent
             </Button>
           </VStack>
 
           <Image
             flex={2}
-            width={"328px"}
-            src="/assets/images/investorhero.png"
+            width={"530px"}
+            src="/assets/images/investorshero.png"
           />
         </HStack>
         <VStack width={"full"} gap={"10px"}>

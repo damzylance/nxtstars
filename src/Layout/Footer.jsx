@@ -5,7 +5,7 @@ import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
 function Footer() {
   return (
     <VStack
-      borderTop={"1px solid #3290C4"}
+      borderTop={"1px solid #80AE31"}
       alignItems={"flex-start"}
       width="full"
       pt={"20px"}
@@ -27,13 +27,13 @@ function Footer() {
           <Text>Investors</Text>
         </VStack>
       </HStack>
-      <Text px={"4"} fontSize={"2xl"} fontWeight={"900"} color={"#3290C4"}>
+      <Text px={"4"} fontSize={"2xl"} fontWeight={"900"} color={"#80AE31"}>
         NxtStars
       </Text>
       <HStack
         justifyContent={"space-between"}
         width={"full"}
-        background={"#CEE6F3"}
+        background={"#E9F4D7"}
         px={"4"}
         py="6"
       >

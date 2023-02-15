@@ -9,11 +9,11 @@ function Nav() {
       width={"full"}
       alignItems={"center"}
       justifyContent={"space-between"}
-      borderBottom={"1px solid #3290C4"}
+      borderBottom={"1px solid #80AE31"}
     >
       <Link to={"/"}>
-        <Text fontSize={"2xl"} fontWeight={"900"} color={"#3290C4"}>
-          NxtStars
+        <Text fontSize={"2xl"} fontWeight={"900"} color={"#80AE31"}>
+          NxStars
         </Text>
       </Link>
       <HStack gap={"30px"}>
@@ -28,7 +28,7 @@ function Nav() {
         </Link>
       </HStack>
       <Link to="/get-started">
-        <Button background={"#3290C4"} color="#fff">
+        <Button background={"#80AE31"} color="#fff">
           Get Started
         </Button>
       </Link>

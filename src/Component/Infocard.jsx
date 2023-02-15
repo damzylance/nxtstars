@@ -5,7 +5,7 @@ function Infocard(props) {
   return (
     <VStack
       alignItems={"flex-start"}
-      background={"#CEE6F3"}
+      background={"#E9F4D7"}
       gap={"5px"}
       minW="463px"
       padding={"18px 20px"}
@@ -20,7 +20,7 @@ function Infocard(props) {
       >
         <Image width={"203px"} src={props.image} margin="0 auto" />
       </Box>
-      <Button background={"#3290C4"} color="#fff">
+      <Button background={"#80AE31"} color="#fff">
         {props.buttonText ? props.buttonText : "Players"}{" "}
       </Button>
       <Text fontSize={"large"} fontWeight={"600"}>

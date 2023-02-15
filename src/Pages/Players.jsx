@@ -3,7 +3,7 @@ import Layout from "../Layout";
 import Infocard from "../Component/Infocard";
 import Portfoliocard from "../Component/Portfoliocard";
 import { VStack, Text, HStack, Image, Button } from "@chakra-ui/react";
-const span = { color: "#3290C4", fontWeight: "900" };
+const span = { color: "#80AE31", fontWeight: "900" };
 function Players() {
   return (
     <Layout>
@@ -18,7 +18,7 @@ function Players() {
               Fund your professional football career from a community of
               sponsors and take them along for the ride.{" "}
             </Text>
-            <Button color={"#fff"} background="#3290C4">
+            <Button color={"#fff"} background="#80AE31">
               Get funded
             </Button>
           </VStack>

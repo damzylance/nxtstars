@@ -10,10 +10,10 @@ function Getstarted() {
         width="70%"
         margin={"0 auto"}
         justifyContent={"center"}
-        background={"#CEE6F3"}
+        background={"#E9F4D7"}
         borderRadius={"8px"}
       >
-        <Button background={"#3290C4"} size={"lg"} color={"#fff"}>
+        <Button background={"#80AE31"} size={"lg"} color={"#fff"}>
           Join Nxtstars
         </Button>
         <Text fontSize={"3xl"} fontWeight={900}>
