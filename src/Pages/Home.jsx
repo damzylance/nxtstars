@@ -2,7 +2,7 @@ import React from "react";
 import Layout from "../Layout";
 import Infocard from "../Component/Infocard";
 import { VStack, Text, HStack, Image, Button, Box } from "@chakra-ui/react";
-
+import { Link } from "react-router-dom";
 function Home() {
   return (
     <Layout>
@@ -25,14 +25,16 @@ function Home() {
             </Text>
             <HStack gap={"30px"} justifyContent={"space-between"}>
               <Button color={"#fff"} background="#80AE31">
-                Get Started
+                <Link to={"https://d6pg2r1gfye.typeform.com/to/BcD78h1b"}>
+                  Get Started
+                </Link>
               </Button>
               <Button
                 color={"#80AE31"}
                 background={"#fff"}
                 border={"1px solid #80AE31"}
               >
-                Learn More
+                <Link to={"/investors"}>Learn More</Link>
               </Button>
             </HStack>
           </VStack>
@@ -54,18 +56,18 @@ function Home() {
             width={"full"}
             overflowX="scroll"
             flexDir={["column", "column", "row", "row"]}
-            gap={5}
+            gap={"30px"}
           >
-            <Infocard image="/assets/images/heroimage1.png" />
+            <Infocard image="/assets/images/heroimage1.png" link={"/players"} />
             <Infocard
               image="/assets/images/heroimage1.png"
               title="Unprcedented access to football"
               linkText="Back the future of football"
               buttonText="Investors"
-            />
-            <Infocard
-              image="/assets/images/heroimage1.png"
-              buttonText="Teams"
+              info={
+                "Nxstars gives you the opportunity to join the team of a future Messi or Ronaldo. Back some of the best aspiring football talents and share in the rewards and excitement of their climb to the top of their career."
+              }
+              link={"/investors"}
             />
           </HStack>
         </VStack>

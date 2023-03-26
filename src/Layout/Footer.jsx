@@ -1,6 +1,7 @@
 import React from "react";
 import { VStack, HStack, Text } from "@chakra-ui/react";
-import { BsInstagram, BsFacebook, BsTwitter } from "react-icons/bs";
+import { BsInstagram, BsFacebook, BsTwitter, BsYoutube } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -17,7 +18,9 @@ function Footer() {
         justifyContent={"space-between"}
       >
         <Text fontSize={"lg"} fontWeight={"700"}>
-          Get Started
+          <Link to="https://d6pg2r1gfye.typeform.com/to/BcD78h1b">
+            Get Started
+          </Link>
         </Text>
         <VStack alignItems={"flex-start"} gap={"5px"}>
           <Text fontSize={"lg"} fontWeight={"700"}>
@@ -48,9 +51,16 @@ function Footer() {
           <Text fontWeight={"600"}>Nxtstars Tech, inc.</Text>
         </HStack>
         <HStack>
-          <BsFacebook fontSize={"24px"} />
-          <BsInstagram fontSize={"24px"} />
-          <BsTwitter fontSize={"24px"} />
+          <Link to={"https://www.youtube.com/thenexstars"}>
+            <BsYoutube fontSize={"24px"} />
+          </Link>
+
+          <Link to={"https://www.instagram.com/thenxstars/"}>
+            <BsInstagram fontSize={"24px"} />
+          </Link>
+          <Link to={"https://twitter.com/TheNxstars"}>
+            <BsTwitter fontSize={"24px"} />
+          </Link>
         </HStack>
       </HStack>
     </VStack>

@@ -1,5 +1,6 @@
 import React from "react";
 import { VStack, HStack, Image, Button, Text } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 
 function Infocard(props) {
   return (
@@ -10,7 +11,7 @@ function Infocard(props) {
       minW={["300px", "300px", "463px"]}
       padding={"18px 20px"}
       borderRadius={4}
-      justifyContent="space-between"
+      justifyContent={"space-between"}
       marginInlineStart={"0rem !important"}
     >
       <HStack
@@ -29,14 +30,16 @@ function Infocard(props) {
       <Text fontSize={"large"} fontWeight={"600"}>
         {props.title ? props.title : "Never compromise on your potential"}
       </Text>
-      <Text>
+      <Text height={"250px"}>
         {props.info
           ? props.info
-          : " Moonshot helps you achieve your full potentials. By creating a communityof backers, Nxtstars let you fund your career and offers a variety ofservices to help you deliver the best on-field performance"}
+          : " NexStars helps you achieve your full potentials. By creating a communityof backers, NxStars let you fund your career and offers a variety ofservices to help you deliver the best on-field performance"}
       </Text>
-      <Text textDecoration={"underline"}>
-        {props.linkText ? props.linkText : "Fund your Football journey"}
-      </Text>
+      <Link to={props.link}>
+        <Text textDecoration={"underline"}>
+          {props.linkText ? props.linkText : "Fund your Football journey"}
+        </Text>
+      </Link>
     </VStack>
   );
 }

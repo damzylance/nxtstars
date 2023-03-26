@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import Layout from "../Layout";
 import Infocard from "../Component/Infocard";
 import { VStack, Text, HStack, Image, Button } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
 const span = { color: "#80AE31", fontWeight: "900" };
 function Investors() {
   return (
@@ -27,7 +28,9 @@ function Investors() {
               unprecedented access to the sport.
             </Text>
             <Button color={"#fff"} background="#80AE31">
-              Back Football Talent
+              <Link to={"https://d6pg2r1gfye.typeform.com/to/BcD78h1b"}>
+                Back Football Talent
+              </Link>
             </Button>
           </VStack>
 
@@ -57,8 +60,12 @@ function Investors() {
                   </span>
                 </Fragment>
               }
+              info={
+                "Becoming a professional footballer as an African is daunting, expensive and unaffordable dream for most. Between expensive cost of proper academy training, quality kits, trial travels, including unchecked scammers, many aspiring football abandon the dream of going pro."
+              }
               image="/assets/images/heroimage1.png"
               linkText="Visit blog to read more"
+              link={"https://d6pg2r1gfye.typeform.com/to/BcD78h1b"}
             />
             <Infocard
               buttonText="Invest in Players"
@@ -71,8 +78,12 @@ function Investors() {
                   </span>
                 </Fragment>
               }
+              info={
+                "To back a player you believe in, you can fund them and get a portion of their future earning when they become professionals. More importantly, as a Nxstar investor, you are impacting the life of many youngsters by helping them fulfil their lifelong dream of becoming a football star. "
+              }
               image="/assets/images/heroimage1.png"
               linkText="Support players"
+              link={"https://d6pg2r1gfye.typeform.com/to/BcD78h1b"}
             />
             <Infocard
               buttonText="Access to all Players"
@@ -85,8 +96,12 @@ function Investors() {
                   </span>
                 </Fragment>
               }
+              info={
+                "As a Nexstar investor, you not don’t only have access to  your players, you have access to the entire pool of Nexstar talents. By backing only one player, you get the reward for backing such player and still have the opportunity to relate with all Nexstar players.   "
+              }
               image="/assets/images/heroimage1.png"
               linkText="Explore benefits"
+              link={"https://d6pg2r1gfye.typeform.com/to/BcD78h1b"}
             />
           </HStack>
         </VStack>
