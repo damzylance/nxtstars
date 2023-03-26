@@ -26,8 +26,12 @@ function Footer() {
           <Text fontSize={"lg"} fontWeight={"700"}>
             Resources
           </Text>
-          <Text>Players</Text>
-          <Text>Investors</Text>
+          <Link to={"/players"}>
+            <Text>Players</Text>
+          </Link>
+          <Link to={"/investors"}>
+            <Text>Investors</Text>
+          </Link>
         </VStack>
       </HStack>
       <Text px={"4"} fontSize={"2xl"} fontWeight={"900"} color={"#80AE31"}>
